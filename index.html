@@ -5,8 +5,16 @@
     <title>NHLFlix - Watch All Things Hockey Online</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/imported.css" />
+    <script> 
+      function swapGIF(elm) { 
+      elm.src = "images/touchdown.gif"; 
+      } 
+      function swapPNG(elm) { 
+      elm.src = "images/buffalo_bills.png"; 
+      } 
+      </script>
   </head>
-
+  
   <body>
       <section class="above-the-fold-container">
           <header>
@@ -34,52 +42,40 @@
                 </div>
               </nav>
           </header>
-<section class="flex-enabled flex-center flex-column" style="width: 550px; padding-right: 80px;"> 
-            <h1 class="billsflix billsflix-title flex-left"> 
-            Enjoy on your TV. 
-            </h1> 
+          <section class="flex-enabled flex-center flex-column" style="width: 550px; padding-right: 80px;"> 
+            <h1 class="billsflix billsflix-title"> Enjoy on your TV.</h1>
+            <h3 class="billsflix">watch anywhere any time.</h3>
+            <h3 class="billsflix billsflix-subtitle">Ready to watch? Enter your email to 
+              create or restart your membership.
+            </h3>
+            <form class="flex-enabled flex-center" action="getstarted.html"> 
+              <input type="email" class="input-email" placeholder="Email address" /> 
+              <button type="submit" class="button-submit">Get Started &gt;</button> 
+             </form>
+          </section>
+        </section>
             <h3 class="billsflix flex-left"> 
             Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more. 
             </h3> 
           <h1 class="NHLFlix">Unlimited clips, sound bites, and more</h1>
-        </section>
-        
-           </section>
         <section class="container flex-enabled flex-center">
             <img src="Images/NHL_Fan.gif" alt="NHL Fan">
         </section>
         <section class="container flex-enabled flex-center">
             <img src="Images/Lundvist Celebration.gif" alt="Celebration">
         </section>
+        <section class="container flex-enabled flex-center"> 
+          <img src="images/buffalo_bills.png" alt="buffalo bills" onmouseover="swapGIF(this)" onmouseout="swapPNG(this)" width="315"> 
+          <section class="flex-enabled flex-center flex-column" style="width: 620px; padding-left: 80px;"> 
+          <h1 class="billsflix billsflix-title flex-left"> 
+          Download your clips to watch offline. 
+          </h1> 
+          <h3 class="billsflix flex-left"> 
+          Save your favorites easily and always have something to watch. 
+          </h3> 
+          </section> 
+          </section>
 
-        
-    <header>
-      <nav class="flex-enabled">
-        <a href="index.html">
-          <img
-            class="logo"
-            src="images/BillsFlixLogo.png"
-            alt="BillsFlixlogo"
-          />
-        </a>
-
-        <div class="flex-enabled flex-right">
-          <ul class="billsflix flex-enabled flex-right">
-            <li>
-              <select class="select-language">
-                <option>English</option>
-                <option>Español</option>
-              </select>
-            </li>
-            <li>
-              <button class="button-signin">Sign In</button>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <h1 class="NHLFlix">Unlimited Clips, sound bites, and more.</h1>
   </body>
 </html>
 
